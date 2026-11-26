@@ -1,0 +1,16 @@
+{"phase":"A","event":"session_start","reason":"startup","history":[]}
+{"phase":"A","event":"request","model":"deepseek-flash","roles":["system","user"],"hasHandoffCommand":false}
+{"phase":"A","event":"response","status":200}
+{"phase":"A","event":"tool_execution_start","toolName":"read"}
+{"phase":"A","event":"tool_execution_end","toolName":"read","isError":false}
+{"phase":"A","event":"request","model":"deepseek-flash","roles":["system","user","assistant","tool"],"hasHandoffCommand":true}
+{"phase":"A","event":"response","status":200}
+{"phase":"A","event":"agent_end","role":"assistant","stopReason":"stop"}
+{"phase":"B","event":"session_start","reason":"startup","history":["system","user","assistant","toolResult","assistant"]}
+{"phase":"B","event":"request","model":"deepseek-flash","roles":["system","user","assistant","tool","assistant","user"],"hasHandoffCommand":true}
+{"phase":"B","event":"response","status":200}
+{"phase":"B","event":"agent_end","role":"assistant","stopReason":"stop"}
+{"phase":"B","event":"session_start","reason":"new","history":[]}
+{"phase":"B","event":"request","model":"deepseek-flash","roles":["system","user"],"hasHandoffCommand":false}
+{"phase":"B","event":"response","status":200}
+{"phase":"B","event":"agent_end","role":"assistant","stopReason":"stop"}
